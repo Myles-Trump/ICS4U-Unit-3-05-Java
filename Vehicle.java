@@ -53,6 +53,7 @@ public class Vehicle {
 
     /**
     * Getter for colour.
+    * @return colour
     */
     public String getColour() {
         return this.colour;
