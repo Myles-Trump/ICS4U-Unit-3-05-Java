@@ -53,15 +53,15 @@ public class Vehicle {
     /**
     * The doors() method tells the user how many doors the vehicle has.
     */
-    private void doors() {
-        System.out.println("\nThe car has" + numberOfDoors + " doors.");
+    public void doors() {
+        System.out.println("\nThe car has " + numberOfDoors + " doors.");
     }
 
     /**
     * The currentSpeed() method tells the user the current speed the vehicle is
     * moving.
     */
-    private void currentSpeed() {
+    public void currentSpeed() {
         System.out.println("\nThe car is moving at " + speed + " mph.");
     }
 
@@ -69,7 +69,7 @@ public class Vehicle {
     * The maximumSpeed() method tells the user the maximum speed the vehicle is
     * moving.
     */
-    private void maximumSpeed() {
+    public void maximumSpeed() {
         System.out.println("\nThe car's maximum speed is " + maximumSpeed +
             " mph.");
     }
@@ -81,13 +81,14 @@ public class Vehicle {
         if (maximumSpeed <= speed + acceleration) {
             System.out.print("\nYou cannot accelerate that much! Your speed");
             speed = maximumSpeed;
-            System.out.println(" was set to " + speed " mph.");
-        } else if (acceleration <= 0);
+            System.out.println(" was set to " + speed + " mph.");
+        } else if (acceleration <= 0) {
             System.out.println("\nYou have to enter a positive integer!");
         } else {
             speed = speed + acceleration;
             System.out.println("\nYour speed was set to " + speed + " mph.");
         }
+        return acceleration;
     }
 
     /**
@@ -104,5 +105,6 @@ public class Vehicle {
             speed = speed - brakes;
             System.out.println("\nYour speed was set to " + speed + " mph.");
         }
+        return brakes;
     }
 }
