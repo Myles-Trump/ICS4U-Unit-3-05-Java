@@ -39,14 +39,15 @@ public class Vehicle {
     * Defining and setting maximum speed.
     */
     private int maximumSpeed = C180;
-    
+
 
     // getters
 
     /**
     * Getter for license plate.
+    * @return license plate
     */
-    public String getLicensePlate(){
+    public String getLicensePlate() {
         return this.licensePlate;
     }
 
@@ -61,15 +62,17 @@ public class Vehicle {
 
     /**
     * Setter for license plate.
+    * @param newPlate new license plate
     */
-    public void setLicensePlate(String newPlate) {
+    public void setLicensePlate(final String newPlate) {
         this.licensePlate = newPlate;
     }
 
     /**
     * Setter for colour.
+    * @param newColour new vehicle colour
     */
-    public void setColour(String newColour) {
+    public void setColour(final String newColour) {
         this.colour = newColour;
     }
 
@@ -95,12 +98,14 @@ public class Vehicle {
     * moving.
     */
     public void maximumSpeed() {
-        System.out.println("\nThe vehicle's maximum speed is " + maximumSpeed +
-            " mph.");
+        System.out.println("\nThe vehicle's maximum speed is " + maximumSpeed
+            + " mph.");
     }
 
     /**
     * The accelerate() method lets the user speed up the vehicle.
+    * @return the new speed
+    * @param acceleration add onto speed
     */
     public int accelerate(final int acceleration) {
         if (maximumSpeed <= speed + acceleration) {
@@ -118,6 +123,8 @@ public class Vehicle {
 
     /**
     * The brake() method lets the user slow down the vehicle.
+    * @return the new speed
+    * @param brakes subtract from speed
     */
     public int brake(final int brakes) {
         if (brakes <= 0) {
