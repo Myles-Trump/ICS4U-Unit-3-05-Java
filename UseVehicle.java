@@ -69,9 +69,9 @@ final class UseVehicle {
                 switch (userChoice) {
                     case 1:
                         final Scanner userChoice3 = new Scanner(System.in);
-                        System.out.print("\nThe colour is " +
-                            vehicleVariable.getColour() +
-                            ", would you like to change it? (y/n): ");
+                        System.out.print("\nThe colour is "
+                            + vehicleVariable.getColour()
+                            + ", would you like to change it? (y/n): ");
                         switch (userChoice3.nextLine()) {
                             case "y":
                                 final Scanner newCol = new Scanner(System.in);
@@ -85,9 +85,9 @@ final class UseVehicle {
 
                     case 2:
                         final Scanner userChoice1 = new Scanner(System.in);
-                        System.out.print("\nYour license plate is " +
-                            vehicleVariable.getLicensePlate() +
-                            ", would you like to change it? (y/n): ");
+                        System.out.print("\nYour license plate is "
+                            + vehicleVariable.getLicensePlate()
+                            + ", would you like to change it? (y/n): ");
                         switch (userChoice1.nextLine()) {
                             case "y":
                                 final Scanner newPlate = new Scanner(System.in);

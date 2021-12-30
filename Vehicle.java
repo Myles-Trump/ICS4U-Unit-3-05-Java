@@ -8,12 +8,37 @@
 
 public class Vehicle {
 
+    // Constants
+    /**
+    * 4.
+    */
+    public static final int C4 = 4;
+    /**
+    * 180.
+    */
+    public static final int C180 = 180;
+
     // the Vehicle class has two fields
+    /**
+    * Defining license plate.
+    */
     private String licensePlate;
+    /**
+    * Defining and setting colour.
+    */
     private String colour = "Really Red";
-    private int numberOfDoors = 4;
+    /**
+    * Defining and setting doors.
+    */
+    private int numberOfDoors = C4;
+    /**
+    * Defining and setting current speed.
+    */
     private int speed = 0;
-    private int maximumSpeed = 180;
+    /**
+    * Defining and setting maximum speed.
+    */
+    private int maximumSpeed = C180;
     
 
     // getters
