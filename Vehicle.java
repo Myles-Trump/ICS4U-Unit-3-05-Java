@@ -54,7 +54,7 @@ public class Vehicle {
     * The doors() method tells the user how many doors the vehicle has.
     */
     public void doors() {
-        System.out.println("\nThe car has " + numberOfDoors + " doors.");
+        System.out.println("\nThe vehicle has " + numberOfDoors + " doors.");
     }
 
     /**
@@ -62,7 +62,7 @@ public class Vehicle {
     * moving.
     */
     public void currentSpeed() {
-        System.out.println("\nThe car is moving at " + speed + " mph.");
+        System.out.println("\nThe vehicle is moving at " + speed + " mph.");
     }
 
     /**
@@ -70,7 +70,7 @@ public class Vehicle {
     * moving.
     */
     public void maximumSpeed() {
-        System.out.println("\nThe car's maximum speed is " + maximumSpeed +
+        System.out.println("\nThe vehicle's maximum speed is " + maximumSpeed +
             " mph.");
     }
 
