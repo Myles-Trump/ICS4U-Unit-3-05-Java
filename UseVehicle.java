@@ -60,7 +60,7 @@ final class UseVehicle {
             try {
                 System.out.print("\nWould you like to (input 1) interact with");
                 System.out.print(" the vehicle's colour, (input 2) interact ");
-                System.out.print("with the vehicles license plate, (input 3) ");
+                System.out.print("with the vehicles license plate, (input 3)");
                 System.out.print(" check how many doors the vehicle has, ");
                 System.out.print("(input 4) interact with the vehicle's speed");
                 System.out.print(", or (input 5) exit?: ");

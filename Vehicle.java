@@ -133,7 +133,7 @@ public class Vehicle {
         } else if (brakes > speed) {
             System.out.print("\nYou cannot go slower than 0 mph! You speed ");
             speed = 0;
-            System.out.println(" was set to " + speed + " mph.");
+            System.out.println("was set to " + speed + " mph.");
         } else {
             speed = speed - brakes;
             System.out.println("\nYour speed was set to " + speed + " mph.");
